@@ -1,0 +1,29 @@
+{
+    "name": "krupa/laravel-ocs",
+    "description": "Oktawave Cloud Storage service provider for Laravel",
+    "keywords": [
+        "filesystem", "filesystems", "files", "oktawave", "ocs", "openstack", "swift"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adam Krupa",
+            "email": "hello@adamkrupa.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Krupa\\LaravelOCS\\": "src/"
+        }
+    },
+    "require": {
+        "nimbusoft/flysystem-openstack-swift": "^0.2"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Krupa\\LaravelOCS\\OCSServiceProvider"
+            ]
+        }
+    }
+}
